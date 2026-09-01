@@ -1,11 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivia Styler | Computer Science Student</title>
+    <meta
+      name="description"
+      content="Portfolio website for Olivia Styler, a computer science student at the University of Utah, showcasing projects, skills, and achievements."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hza4yso.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Olivia Styler</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Computer Science Student</p>
+            <h1>Building thoughtful software and meaningful experiences.</h1>
+            <p class="intro">
+              I am a CS student at the University of Utah with a strong interest in
+              software design, human-centered systems, and creating products that are
+              both technically sound and intuitive for users.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="#contact">Contact Me</a>
+            </div>
+            <ul class="mini-stats" aria-label="Quick summary">
+              <li><strong>BS CS</strong><span>University of Utah</span></li>
+              <li><strong>GPA 3.7</strong><span>Academic achievement</span></li>
+              <li><strong>2028</strong><span>Anticipated graduation</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Profile summary">
+            <div class="profile-badge">OS</div>
+            <h2>About Me</h2>
+            <p>
+              I am passionate about learning how technology can improve everyday life,
+              especially through intuitive interfaces, efficient systems, and meaningful
+              user experiences.
+            </p>
+            <div class="card-list">
+              <span>Software Design</span>
+              <span>Web Development</span>
+              <span>Human-Centered Systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-header">
+          <p class="eyebrow">About</p>
+          <h2>Computer science student in Salt Lake City</h2>
+        </div>
+
+        <div class="container bio-layout">
+          <div class="bio-text">
+            <p>
+              Olivia Styler is a computer science student at the University of Utah,
+              pursuing a BS in Computer Science with an anticipated graduation date of
+              May 2028. She is based in Salt Lake City, Utah, and is committed to
+              building technology that is accessible, reliable, and valuable to real users.
+            </p>
+            <p>
+              Her interest spans software engineering, web development, design, and
+              interaction-driven problem solving. She enjoys combining technical skill with
+              creativity to create tools and websites that are both functional and engaging.
+            </p>
+          </div>
+
+          <div class="info-panel contact-panel" aria-label="Contact information">
+            <h3>Contact Me</h3>
+            <div class="contact-list">
+              <a href="mailto:oliviastyler@gmail.com">oliviastyler@gmail.com</a>
+              <a href="https://www.linkedin.com/in/olivia-styler" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/OliviaStyler" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <p class="location-text">Salt Lake City, UT</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt-bg">
+        <div class="container section-header">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical skills and creative strengths</h2>
+        </div>
+
+        <div class="container skill-grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>C++</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Design & UX</h3>
+            <ul>
+              <li>Adobe Suite</li>
+              <li>Graphic Design</li>
+              <li>User Experience Design</li>
+              <li>Responsive Interfaces</li>
+              <li>Accessibility</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Tools & Workflow</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Blazor</li>
+              <li>Qt</li>
+              <li>Retool</li>
+              <li>Software Prototyping</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container section-header">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured work</h2>
+        </div>
+
+        <div class="container project-grid">
+          <article class="project-card">
+            <div class="project-image project-one">
+              <div class="project-icon" aria-label="Recipe app icon"><i class="fa-solid fa-bowl-food"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>RecipeReader Interactive Educational App</h3>
+              <p class="project-meta">C++ | May 2026</p>
+              <ul class="project-bullets">
+                <li>Custom C++ UI framework built without external GUI libraries</li>
+                <li>Box2D physics engine for ingredient animations and interactive feedback</li>
+                <li>Difficulty-scaled recipe progression with unlockable content</li>
+                <li>Step-by-step cooking mode with contextual term definitions</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-two">
+              <div class="project-icon" aria-label="Sprite editor icon"><i class="fa-solid fa-palette"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Pixel Sprite Editor</h3>
+              <p class="project-meta">C++, Qt, JSON | March 2026</p>
+              <ul class="project-bullets">
+                <li>Multi-layer pixel art editor/animator built with a 5-person team</li>
+                <li>Custom canvas rendering pipeline on QGraphicsView/QGraphicsScene</li>
+                <li>Multi-layer, multi-frame data model with real-time animation playback</li>
+                <li>Onion skinning + adjustable-FPS live preview; custom JSON save/load</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-three">
+              <div class="project-icon" aria-label="Snake game icon"><i class="fa-solid fa-gamepad"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Networked Multiplayer Snake Game</h3>
+              <p class="project-meta">C#, TCP, Blazor Server | Dec 2025</p>
+              <ul class="project-bullets">
+                <li>Real-time multiplayer with custom TCP networking library</li>
+                <li>JSON-based client-server protocol with automatic reconnection</li>
+                <li>Collision detection + viewport culling for smooth rendering</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-four">
+              <div class="project-icon" aria-label="Spreadsheet icon"><i class="fa-solid fa-table"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Interactive Spreadsheet Application</h3>
+              <p class="project-meta">C#, Blazor | Oct 2025</p>
+              <ul class="project-bullets">
+                <li>Full-stack spreadsheet clone built over two months</li>
+                <li>Formula evaluation engine with dependency graph management</li>
+                <li>Circular dependency detection with automatic rollback</li>
+                <li>Visual formula tracing and error highlighting</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-five">
+              <div class="project-icon" aria-label="Recycling website icon"><i class="fa-solid fa-recycle"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Sustainability in SLC Website</h3>
+              <p class="project-meta">HTML, CSS, JavaScript, Retool | Sept 2025</p>
+              <ul class="project-bullets">
+                <li>Educates SLC residents on sustainable recycling practices</li>
+                <li>AI-driven query system (Retool) for local recycling guidelines</li>
+                <li>Responsive JS pop-up feedback windows</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-six">
+              <div class="project-icon" aria-label="Text generator icon"><i class="fa-solid fa-wand-sparkles"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Markov Chain Text Generator</h3>
+              <p class="project-meta">Java | April 2025</p>
+              <ul class="project-bullets">
+                <li>Probabilistic text generator using nested HashMaps for O(1) lookups</li>
+                <li>Deterministic, random, and frequency-ranked generation modes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-seven">
+              <div class="project-icon" aria-label="Music editor icon"><i class="fa-solid fa-music"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Interactive Music Composition Editor</h3>
+              <p class="project-meta">Java | Nov 2024</p>
+              <ul class="project-bullets">
+                <li>Grid-based note selection with audio playback</li>
+                <li>Multi-instrument, layered track support; save/load functionality</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-eight">
+              <div class="project-icon" aria-label="National parks icon"><i class="fa-solid fa-mountain-sun"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Utah's National Parks Website</h3>
+              <p class="project-meta">HTML, CSS, JavaScript | July 2023</p>
+              <ul class="project-bullets">
+                <li>Built in a 10-hour hackathon with 30 participants</li>
+                <li>Won “Most Creative” award</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-nine">
+              <div class="project-icon" aria-label="Donation website icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="project-content">
+              <h3>Flow It Forward Website</h3>
+              <p class="project-meta">HTML, CSS | Nov 2023</p>
+              <ul class="project-bullets">
+                <li>Nonprofit donation site for a menstrual hygiene drive</li>
+                <li>Helped deliver 5,000 pads (2022) and 12,377 pads (2023)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section alt-bg">
+        <div class="container section-header">
+          <p class="eyebrow">Education</p>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="container education-layout">
+          <div class="info-panel">
+            <h3>BS Computer Science</h3>
+            <p><strong>University of Utah</strong> | Anticipated May 2028 | GPA 3.7</p>
+            <p><strong>Coursework:</strong> OOP, Discrete Structures, Algorithms &amp; Data Structures, Linear Algebra, Software Practice 1 &amp; 2, Calc 2, Probability &amp; Stats, Computer Organization, Human-Centered Systems, Web Software Dev 1, Physics 1</p>
+          </div>
+
+          <div class="info-panel">
+            <h3>High School Dual Enrollment</h3>
+            <p><strong>Utah Valley University</strong> | May 2024 | 23 credit hours</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="container section-header">
+          <p class="eyebrow">Certifications</p>
+          <h2>Credentials and certificates</h2>
+        </div>
+
+        <div class="container badge-list" aria-label="Certifications list">
+          <span>CTE Skills Certificate (Programming 1 &amp; 2, CS Principles) — 2023-2024</span>
+          <span>CTE Skills Certificate (Intro to IT, Web Dev 2, Robotics 1) — 2021</span>
+          <span>CTE Skills Certificate (Engineering Principles 1, Web Dev 1) — 2020</span>
+          <span>Microsoft Technology Associate: Intro to Programming (HTML/CSS) — 2021</span>
+          <span>Seal of Biliteracy: Spanish (ACTFL) — 2023</span>
+        </div>
+      </section>
+
+      <section id="awards" class="section highlight alt-bg">
+        <div class="container highlight-box">
+          <div>
+            <p class="eyebrow">Awards</p>
+            <h2>Recognized for excellence and leadership.</h2>
+          </div>
+          <ul class="award-list">
+            <li><strong>2024 NCWIT Award for Aspirations in Computing</strong> — National Honorable Mention (top 11% of 3,300 applicants)</li>
+            <li><strong>2023 NCWIT Award</strong> — National Honorable Mention + Northern Utah Affiliate Winner</li>
+            <li><strong>2021 NCWIT Award</strong> — Northern Utah Affiliate Honorable Mention</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="leadership" class="section">
+        <div class="container section-header">
+          <p class="eyebrow">Leadership</p>
+          <h2>Involvement and leadership</h2>
+        </div>
+
+        <div class="container leadership-layout">
+          <div class="info-panel">
+            <p>President, Women in Computing (2024-present)</p>
+            <p>Campus Rep, NCWIT (2024-present)</p>
+            <p>Member of Rewriting the Code, AnitaB.org, Society of Women Engineers, oSTEM, League of Women Voters, and others.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-card">
+        <div class="footer-heading">
+          <p class="eyebrow">Contact</p>
+          <h3>Let’s connect</h3>
+        </div>
+
+        <div class="contact-links" aria-label="Contact links">
+          <a href="mailto:oliviastyler@gmail.com" class="contact-link">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>oliviastyler@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/olivia-styler" target="_blank" rel="noreferrer" class="contact-link">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/OliviaStyler" target="_blank" rel="noreferrer" class="contact-link">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
