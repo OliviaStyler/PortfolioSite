@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,10 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <div class="brand">Olivia Styler</div>
+        <a class="brand" href="#top" aria-label="Olivia Styler home">
+          <img src="img/olivia-logo.png" alt="Olivia Styler logo" />
+          <span>Olivia Styler</span>
+        </a>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -32,16 +35,16 @@
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="container hero-content">
           <div class="hero-text">
             <p class="eyebrow">Computer Science Student</p>
             <h1>Building thoughtful software and meaningful experiences.</h1>
             <p class="intro">
-              I am a CS student at the University of Utah with a strong interest in
-              software design, human-centered systems, and creating products that are
-              both technically sound and intuitive for users.
+              I am a CS student at the University of Utah with a strong interest
+              in software design, human-centered systems, and creating products
+              that are both technically sound and intuitive for users.
             </p>
             <div class="button-row">
               <a class="button primary" href="#projects">View Projects</a>
@@ -55,12 +58,14 @@
           </div>
 
           <div class="hero-card" aria-label="Profile summary">
-            <div class="profile-badge">OS</div>
-            <h2>About Me</h2>
+            <div class="profile-badge profile-logo">
+              <img src="img/olivia-logo.png" alt="Olivia Styler logo" />
+            </div>
+            <h2>Hey! I'm Olivia</h2>
             <p>
-              I am passionate about learning how technology can improve everyday life,
-              especially through intuitive interfaces, efficient systems, and meaningful
-              user experiences.
+              I am passionate about learning how technology can improve everyday
+              life, especially through intuitive interfaces, efficient systems,
+              and meaningful user experiences.
             </p>
             <div class="card-list">
               <span>Software Design</span>
@@ -80,24 +85,39 @@
         <div class="container bio-layout">
           <div class="bio-text">
             <p>
-              Olivia Styler is a computer science student at the University of Utah,
-              pursuing a BS in Computer Science with an anticipated graduation date of
-              May 2028. She is based in Salt Lake City, Utah, and is committed to
-              building technology that is accessible, reliable, and valuable to real users.
+              Olivia Styler is a computer science student at the University of
+              Utah, pursuing a BS in Computer Science with an anticipated
+              graduation date of May 2028. She is based in Salt Lake City, Utah,
+              and is committed to building technology that is accessible,
+              reliable, and valuable to real users.
             </p>
             <p>
-              Her interest spans software engineering, web development, design, and
-              interaction-driven problem solving. She enjoys combining technical skill with
-              creativity to create tools and websites that are both functional and engaging.
+              Her interest spans software engineering, web development, design,
+              and interaction-driven problem solving. She enjoys combining
+              technical skill with creativity to create tools and websites that
+              are both functional and engaging.
             </p>
           </div>
 
-          <div class="info-panel contact-panel" aria-label="Contact information">
+          <div
+            class="info-panel contact-panel"
+            aria-label="Contact information"
+          >
             <h3>Contact Me</h3>
             <div class="contact-list">
               <a href="mailto:oliviastyler@gmail.com">oliviastyler@gmail.com</a>
-              <a href="https://www.linkedin.com/in/olivia-styler" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="https://github.com/OliviaStyler" target="_blank" rel="noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/olivia-styler"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/OliviaStyler"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
             </div>
             <p class="location-text">Salt Lake City, UT</p>
           </div>
@@ -155,63 +175,237 @@
         </div>
 
         <div class="container project-grid">
+          <article class="project-card featured-project">
+            <div class="project-image project-routine">
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="featured-label">Featured GitHub Project</p>
+              <h3>L'Oréal AI Routine Builder</h3>
+              <p class="project-meta">HTML, CSS, JavaScript, AI</p>
+              <ul class="project-bullets">
+                <li>
+                  Built a searchable, category-filtered L'Oréal product catalog
+                  with expandable product details
+                </li>
+                <li>
+                  Persisted product selections locally, then generated
+                  step-by-step routines through a Cloudflare Worker
+                </li>
+                <li>
+                  Added context-aware follow-up chat, keyboard-accessible
+                  product selection, and configurable language direction
+                </li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/OliviaStyler/09-prj-loreal-routine-builder"
+                target="_blank"
+                rel="noreferrer"
+                >View Repository
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a
+                class="project-link"
+                href="https://github.com/OliviaStyler/09-prj-loreal-routine-builder"
+                target="_blank"
+                rel="noreferrer"
+                >View live demo
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="project-card featured-project">
+            <div class="project-image project-chatbot">
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="featured-label">Featured GitHub Project</p>
+              <h3>L'Oréal Beauty Chatbot</h3>
+              <p class="project-meta">
+                HTML, CSS, JavaScript, Cloudflare Workers
+              </p>
+              <ul class="project-bullets">
+                <li>
+                  Created a conversational beauty advisor for personalized
+                  skincare, makeup, haircare, and fragrance guidance
+                </li>
+                <li>
+                  Maintains a full message history so recommendations build on
+                  earlier needs and preferences
+                </li>
+                <li>
+                  Connected the frontend to a Cloudflare Worker, keeping the
+                  OpenAI API key out of the browser
+                </li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/OliviaStyler/08-prj-loreal-chatbot"
+                target="_blank"
+                rel="noreferrer"
+                >View project
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="project-card featured-project">
+            <div class="project-image project-water">
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="featured-label">Featured GitHub Project</p>
+              <h3>charity: water Game</h3>
+              <p class="project-meta">HTML, CSS, JavaScript</p>
+              <ul class="project-bullets">
+                <li>
+                  Designed a five-level water-path puzzle with growing grids,
+                  obstacles, ordered water cans, and drag-to-play interaction
+                </li>
+                <li>
+                  Implemented difficulty-based timers, speed bonuses, milestone
+                  feedback, sound effects, pause/undo controls, and confetti
+                </li>
+                <li>
+                  Built a device-local top-five leaderboard using localStorage
+                </li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/OliviaStyler/charity-water-game-completed"
+                target="_blank"
+                rel="noreferrer"
+                >View repository
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a
+                class="project-link"
+                href="https://oliviastyler.github.io/charity-water-game-completed/"
+                target="_blank"
+                rel="noreferrer"
+                >View live demo
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-image project-one">
-              <div class="project-icon" aria-label="Recipe app icon"><i class="fa-solid fa-bowl-food"></i></div>
+              <div class="project-icon" aria-label="Recipe app icon">
+                <i class="fa-solid fa-bowl-food"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>RecipeReader Interactive Educational App</h3>
               <p class="project-meta">C++ | May 2026</p>
               <ul class="project-bullets">
-                <li>Custom C++ UI framework built without external GUI libraries</li>
-                <li>Box2D physics engine for ingredient animations and interactive feedback</li>
-                <li>Difficulty-scaled recipe progression with unlockable content</li>
-                <li>Step-by-step cooking mode with contextual term definitions</li>
+                <li>
+                  Custom C++ UI framework built without external GUI libraries
+                </li>
+                <li>
+                  Box2D physics engine for ingredient animations and interactive
+                  feedback
+                </li>
+                <li>
+                  Difficulty-scaled recipe progression with unlockable content
+                </li>
+                <li>
+                  Step-by-step cooking mode with contextual term definitions
+                </li>
               </ul>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-image project-two">
-              <div class="project-icon" aria-label="Sprite editor icon"><i class="fa-solid fa-palette"></i></div>
+              <div class="project-icon" aria-label="Sprite editor icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Pixel Sprite Editor</h3>
               <p class="project-meta">C++, Qt, JSON | March 2026</p>
               <ul class="project-bullets">
-                <li>Multi-layer pixel art editor/animator built with a 5-person team</li>
-                <li>Custom canvas rendering pipeline on QGraphicsView/QGraphicsScene</li>
-                <li>Multi-layer, multi-frame data model with real-time animation playback</li>
-                <li>Onion skinning + adjustable-FPS live preview; custom JSON save/load</li>
+                <li>
+                  Multi-layer pixel art editor/animator built with a 5-person
+                  team
+                </li>
+                <li>
+                  Custom canvas rendering pipeline on
+                  QGraphicsView/QGraphicsScene
+                </li>
+                <li>
+                  Multi-layer, multi-frame data model with real-time animation
+                  playback
+                </li>
+                <li>
+                  Onion skinning + adjustable-FPS live preview; custom JSON
+                  save/load
+                </li>
               </ul>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-image project-three">
-              <div class="project-icon" aria-label="Snake game icon"><i class="fa-solid fa-gamepad"></i></div>
+              <div class="project-icon" aria-label="Snake game icon">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Networked Multiplayer Snake Game</h3>
               <p class="project-meta">C#, TCP, Blazor Server | Dec 2025</p>
               <ul class="project-bullets">
-                <li>Real-time multiplayer with custom TCP networking library</li>
-                <li>JSON-based client-server protocol with automatic reconnection</li>
-                <li>Collision detection + viewport culling for smooth rendering</li>
+                <li>
+                  Real-time multiplayer with custom TCP networking library
+                </li>
+                <li>
+                  JSON-based client-server protocol with automatic reconnection
+                </li>
+                <li>
+                  Collision detection + viewport culling for smooth rendering
+                </li>
               </ul>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-image project-four">
-              <div class="project-icon" aria-label="Spreadsheet icon"><i class="fa-solid fa-table"></i></div>
+              <div class="project-icon" aria-label="Spreadsheet icon">
+                <i class="fa-solid fa-table"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Interactive Spreadsheet Application</h3>
               <p class="project-meta">C#, Blazor | Oct 2025</p>
               <ul class="project-bullets">
                 <li>Full-stack spreadsheet clone built over two months</li>
-                <li>Formula evaluation engine with dependency graph management</li>
+                <li>
+                  Formula evaluation engine with dependency graph management
+                </li>
                 <li>Circular dependency detection with automatic rollback</li>
                 <li>Visual formula tracing and error highlighting</li>
               </ul>
@@ -220,14 +414,22 @@
 
           <article class="project-card">
             <div class="project-image project-five">
-              <div class="project-icon" aria-label="Recycling website icon"><i class="fa-solid fa-recycle"></i></div>
+              <div class="project-icon" aria-label="Recycling website icon">
+                <i class="fa-solid fa-recycle"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Sustainability in SLC Website</h3>
-              <p class="project-meta">HTML, CSS, JavaScript, Retool | Sept 2025</p>
+              <p class="project-meta">
+                HTML, CSS, JavaScript, Retool | Sept 2025
+              </p>
               <ul class="project-bullets">
-                <li>Educates SLC residents on sustainable recycling practices</li>
-                <li>AI-driven query system (Retool) for local recycling guidelines</li>
+                <li>
+                  Educates SLC residents on sustainable recycling practices
+                </li>
+                <li>
+                  AI-driven query system (Retool) for local recycling guidelines
+                </li>
                 <li>Responsive JS pop-up feedback windows</li>
               </ul>
             </div>
@@ -235,35 +437,49 @@
 
           <article class="project-card">
             <div class="project-image project-six">
-              <div class="project-icon" aria-label="Text generator icon"><i class="fa-solid fa-wand-sparkles"></i></div>
+              <div class="project-icon" aria-label="Text generator icon">
+                <i class="fa-solid fa-wand-sparkles"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Markov Chain Text Generator</h3>
               <p class="project-meta">Java | April 2025</p>
               <ul class="project-bullets">
-                <li>Probabilistic text generator using nested HashMaps for O(1) lookups</li>
-                <li>Deterministic, random, and frequency-ranked generation modes</li>
+                <li>
+                  Probabilistic text generator using nested HashMaps for O(1)
+                  lookups
+                </li>
+                <li>
+                  Deterministic, random, and frequency-ranked generation modes
+                </li>
               </ul>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-image project-seven">
-              <div class="project-icon" aria-label="Music editor icon"><i class="fa-solid fa-music"></i></div>
+              <div class="project-icon" aria-label="Music editor icon">
+                <i class="fa-solid fa-music"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Interactive Music Composition Editor</h3>
               <p class="project-meta">Java | Nov 2024</p>
               <ul class="project-bullets">
                 <li>Grid-based note selection with audio playback</li>
-                <li>Multi-instrument, layered track support; save/load functionality</li>
+                <li>
+                  Multi-instrument, layered track support; save/load
+                  functionality
+                </li>
               </ul>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-image project-eight">
-              <div class="project-icon" aria-label="National parks icon"><i class="fa-solid fa-mountain-sun"></i></div>
+              <div class="project-icon" aria-label="National parks icon">
+                <i class="fa-solid fa-mountain-sun"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Utah's National Parks Website</h3>
@@ -277,7 +493,9 @@
 
           <article class="project-card">
             <div class="project-image project-nine">
-              <div class="project-icon" aria-label="Donation website icon"><i class="fa-solid fa-heart"></i></div>
+              <div class="project-icon" aria-label="Donation website icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
             <div class="project-content">
               <h3>Flow It Forward Website</h3>
@@ -300,13 +518,24 @@
         <div class="container education-layout">
           <div class="info-panel">
             <h3>BS Computer Science</h3>
-            <p><strong>University of Utah</strong> | Anticipated May 2028 | GPA 3.7</p>
-            <p><strong>Coursework:</strong> OOP, Discrete Structures, Algorithms &amp; Data Structures, Linear Algebra, Software Practice 1 &amp; 2, Calc 2, Probability &amp; Stats, Computer Organization, Human-Centered Systems, Web Software Dev 1, Physics 1</p>
+            <p>
+              <strong>University of Utah</strong> | Anticipated May 2028 | GPA
+              3.7
+            </p>
+            <p>
+              <strong>Coursework:</strong> OOP, Discrete Structures, Algorithms
+              &amp; Data Structures, Linear Algebra, Software Practice 1 &amp;
+              2, Calc 2, Probability &amp; Stats, Computer Organization,
+              Human-Centered Systems, Web Software Dev 1, Physics 1
+            </p>
           </div>
 
           <div class="info-panel">
             <h3>High School Dual Enrollment</h3>
-            <p><strong>Utah Valley University</strong> | May 2024 | 23 credit hours</p>
+            <p>
+              <strong>Utah Valley University</strong> | May 2024 | 23 credit
+              hours
+            </p>
           </div>
         </div>
       </section>
@@ -318,11 +547,25 @@
         </div>
 
         <div class="container badge-list" aria-label="Certifications list">
-          <span>IBM AI Fundamentals: Foundations for Understanding AI - 2026</span>
-          <span>CTE Skills Certificate (Programming 1 &amp; 2, CS Principles) — 2023-2024</span>
-          <span>CTE Skills Certificate (Intro to IT, Web Dev 2, Robotics 1) — 2021</span>
-          <span>CTE Skills Certificate (Engineering Principles 1, Web Dev 1) — 2020</span>
-          <span>Microsoft Technology Associate: Intro to Programming (HTML/CSS) — 2021</span>
+          <span
+            >IBM AI Fundamentals: Foundations for Understanding AI - 2026</span
+          >
+          <span
+            >CTE Skills Certificate (Programming 1 &amp; 2, CS Principles) —
+            2023-2024</span
+          >
+          <span
+            >CTE Skills Certificate (Intro to IT, Web Dev 2, Robotics 1) —
+            2021</span
+          >
+          <span
+            >CTE Skills Certificate (Engineering Principles 1, Web Dev 1) —
+            2020</span
+          >
+          <span
+            >Microsoft Technology Associate: Intro to Programming (HTML/CSS) —
+            2021</span
+          >
           <span>Seal of Biliteracy: Spanish (ACTFL) — 2023</span>
         </div>
       </section>
@@ -334,9 +577,18 @@
             <h2>Recognized for excellence and leadership.</h2>
           </div>
           <ul class="award-list">
-            <li><strong>2024 NCWIT Award for Aspirations in Computing</strong> — National Honorable Mention (top 11% of 3,300 applicants)</li>
-            <li><strong>2023 NCWIT Award</strong> — National Honorable Mention + Northern Utah Affiliate Winner</li>
-            <li><strong>2021 NCWIT Award</strong> — Northern Utah Affiliate Honorable Mention</li>
+            <li>
+              <strong>2024 NCWIT Award for Aspirations in Computing</strong> —
+              National Honorable Mention (top 11% of 3,300 applicants)
+            </li>
+            <li>
+              <strong>2023 NCWIT Award</strong> — National Honorable Mention +
+              Northern Utah Affiliate Winner
+            </li>
+            <li>
+              <strong>2021 NCWIT Award</strong> — Northern Utah Affiliate
+              Honorable Mention
+            </li>
           </ul>
         </div>
       </section>
@@ -351,7 +603,10 @@
           <div class="info-panel">
             <p>President, Women in Computing (2024-present)</p>
             <p>Campus Rep, NCWIT (2024-present)</p>
-            <p>Member of Rewriting the Code, AnitaB.org, Society of Women Engineers, oSTEM, League of Women Voters, and others.</p>
+            <p>
+              Member of Rewriting the Code, AnitaB.org, Society of Women
+              Engineers, oSTEM, League of Women Voters, and others.
+            </p>
           </div>
         </div>
       </section>
@@ -369,11 +624,21 @@
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <span>oliviastyler@gmail.com</span>
           </a>
-          <a href="https://www.linkedin.com/in/olivia-styler" target="_blank" rel="noreferrer" class="contact-link">
+          <a
+            href="https://www.linkedin.com/in/olivia-styler"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-link"
+          >
             <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/OliviaStyler" target="_blank" rel="noreferrer" class="contact-link">
+          <a
+            href="https://github.com/OliviaStyler"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-link"
+          >
             <i class="fa-brands fa-github" aria-hidden="true"></i>
             <span>GitHub</span>
           </a>
